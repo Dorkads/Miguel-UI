@@ -1,0 +1,52 @@
+body {
+    scroll-behavior: smooth;
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.28;
+    color: var(--white-color);
+    background-color: var(--fondo-color);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    @include fliud-text (60, 34);
+    font-weight: 700;
+}
+
+h2 {
+    @include fliud-text (48, 26);
+    font-weight: 500;
+}
+
+h3 {
+    @include fliud-text (34, 19);
+    font-weight: 500;
+}
+
+h4 {
+    @include fliud-text (24, 14);
+    font-weight: 400;
+}
+
+h5 {
+    @include fliud-text (20, 12);
+    font-weight: 500;
+}
+
+p {
+    @include fliud-text (16, 10);
+    font-weight: 500;
+}

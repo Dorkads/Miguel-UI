@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primario-color: #5C62EC;
+  --white-color: #FFFFFF;
+  --hover-color: #5C62EC;
+  --acento-color: #85BFD1;
+  --gris-color: #A0A0A1;
+  --rellenos-color: #1C1E22;
+  --bordes-color: #26292D;
+  --fondo-color: #171718;
+  --border-radius: 8px;
+  --border-radius-small: 5px;
+  --ff: "DM Sans", "sans-serif";
+  --container-width: 1155px;
+  --container-padding-x: 16px;
+  --section-padding-y: 128px;
+  --nav-padding-y: 18px;
+  --section-padding-top: 0px;
+  --transition-duration: 0.2s;
+  --border: 1px solid var(--bordes-color);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.28;
+  color: var(--white-color);
+  background-color: var(--fondo-color);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: clamp(34px, 4.1666666667vw, 60px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(26px, 3.3333333333vw, 48px);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(19px, 2.3611111111vw, 34px);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: 400;
+}
+
+h5 {
+  font-size: clamp(12px, 1.3888888889vw, 20px);
+  font-weight: 500;
+}
+
+p {
+  font-size: clamp(10px, 1.1111111111vw, 16px);
+  font-weight: 500;
+}
+
+.header__inner {
+  border-bottom: var(--border);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  padding-block: var(--nav-padding-y);
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+.header__link-active {
+  position: relative;
+}
+
+.header__link-active::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primario-color);
+}/*# sourceMappingURL=styles.css.map */
