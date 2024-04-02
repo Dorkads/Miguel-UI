@@ -1,0 +1,42 @@
+.header__menu {
+    @include square (42px);
+    display: inline-flex;
+    align-items: center;
+    text-align: center
+}
+
+.header__nav__btn-menu {
+    @include reset-button;
+    @include square (42px);
+
+    position: relative;
+
+    width: 16px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.header__nav__btn-menu::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+
+    top: 4px;
+    right: 0;
+}
+
+.header__nav__btn-menu::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+
+    top: -4px;
+    left: 0;
+}

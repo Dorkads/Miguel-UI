@@ -1,15 +1,11 @@
 .header__inner {
     border-bottom: var(--border);
+    margin-block: 18px;
 }
 
 .header__inner {
     @include flex-center;
     justify-content: space-between;
-}
-
-.header__nav {
-    padding-block: var(--nav-padding-y);
-    
 }
 
 .header__list {
