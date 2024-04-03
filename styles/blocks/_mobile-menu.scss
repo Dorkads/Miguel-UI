@@ -5,7 +5,7 @@
     transform: translateX(-13000);
 
     @include mobile {
-        display: block;
+        display: none;
 
         position: absolute;
         z-index: 100;

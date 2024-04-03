@@ -1,0 +1,91 @@
+.main {
+
+    &__inner {
+        @include flex-center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        padding: 128px 0 306px 0;
+        // height: 100vh;
+
+
+        @include mobile {
+            padding-bottom: 128px;
+        }
+    }
+
+    &__tittle {
+        line-height: 71px;
+        span {
+            color: var(--primario-color);
+        }
+
+        @include tablet {
+            line-height: 50px;
+        }
+
+        @include mobile {
+
+            line-height: 40px;
+        }
+    }
+
+    &__text {
+        margin: 16px 0 32px 0;
+
+        @include fliud-text (20, 16);
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__buttons {
+        @include flex-center;
+        gap: 24px;
+
+        @include mobile {
+
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        line-height: 16px;
+
+        height: 48px;
+
+        background-color: var(--primario-color);
+        padding: 16px 31.5px;
+        border-radius: var(--border-radius-small);
+    }
+
+    &__button-upload {
+        @include reset-button;
+        @include flex-center;
+        color: var(--white-color);
+
+        font-weight: 500;
+        line-height: 16px;
+
+        width: 169px;
+        height: 48px;
+
+        background-color: inherit;
+        border: var(--border);
+        border-color: var(--white-color);
+        padding: 16px 20px;
+        border-radius: var(--border-radius-small);
+
+        @include hover {
+            background-color: var(--primario-color);
+            border-color: var(--primario-color);
+        }
+
+    }
+
+    &__button-svg {
+        margin-right: 8px;
+    }
+
+}

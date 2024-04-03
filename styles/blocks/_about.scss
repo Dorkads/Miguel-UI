@@ -1,0 +1,85 @@
+.about {
+
+
+    &__inner {
+
+        @include flex-center;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: var(--border);
+        border-radius: var(--border-radius);
+        background-color: var(--rellenos-color);
+        padding: 24px;
+        width: 967px;
+        height: auto;
+        position: relative;
+
+        gap: 32px;
+
+
+        @include tablet {
+
+            flex-direction: column;
+            width: 690px;
+        }
+
+        @include mobile {
+
+            width: 328px;
+        }
+    }
+
+    &__photo-me {
+        border-radius: var(--border-radius);
+
+        @include mobile {
+            max-width: 100%;
+            height: auto;
+
+            vertical-align: top;
+        }
+    }
+
+    &__tittle {
+        margin-bottom: 32px;
+        @include fliud-text (48, 24);
+        line-height: 57px;
+
+        @include tablet {
+
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 7px;
+        @include fliud-text (16, 16);
+        line-height: 28px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+
+        border: var(--border);
+        border-color: var(--white-color);
+        border-radius: var(--border-radius);
+
+        padding: 16px 20px;
+        background-color: inherit;
+
+        margin-top: 24px;
+
+        @include hover {
+            background-color: var(--primario-color);
+            border-color: var(--primario-color);
+        }
+
+    }
+
+    &__arrow-right {
+        margin-left: 12px;
+    }
+
+}

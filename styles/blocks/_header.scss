@@ -1,3 +1,8 @@
+.header {
+    @include fliud-text (16, 16);
+    font-weight: 500;
+}
+
 .header__inner {
     border-bottom: var(--border);
     margin-block: 18px;
