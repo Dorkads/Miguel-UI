@@ -1,25 +1,76 @@
 .projects {
+  &__inner {
+    padding: 128px 0;
 
-    &__inner {
+    @include mobile {
+      padding: 64px 0;
+    }
+  }
 
-        padding: 128px 0;
+  &__tittle {
+    line-height: 40px;
+    margin-bottom: 64px;
+
+    @include desktop {
+      text-align: center;
     }
 
-    &__tittle {
+    @include mobile {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+  }
 
-        line-height: 40px;
-        margin-bottom: 64px;
+  &__items {
+    display: grid;
+    gap: 24px;
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__image {
+    border-radius: var(--border-radius);
+
+    max-width: 1155px;
+
+    @include desktop {
+      display: block;
+      margin-inline: auto;
+      max-width: 1000px;
     }
 
-    &__items {
-        display: grid;
-        gap: 24px;
+    @include tablet {
+      max-width: 747px;
     }
 
-    &__image {
-        border-radius: var(--border-radius);
+    @include mobile {
+      width: 100%;
+    }
+  }
 
-        max-width: 1155px;
+  &__link {
+    max-width: 218px;
+    margin-inline: auto;
+
+    margin-top: 32px;
+    &-arrow {
+      margin-left: 10px;
     }
 
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__link-tittle {
+    background-color: var(--primario-color);
+    padding: 16px 20px;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

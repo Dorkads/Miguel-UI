@@ -1,25 +1,21 @@
 .header__nav__mobile {
-    transition: ease-in 0.2s;
-    
+  transition: ease-in 0.2s;
+  display: none;
+
+  @include mobile {
     display: none;
-    transform: translateX(-13000);
 
-    @include mobile {
-        display: none;
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    top: 10%;
 
-        position: absolute;
-        z-index: 100;
-        height: 100vh;
-        width: 100vw;
-        top: 10%;
-
-        background-color: var(--fondo-color);
-
-        transform: translateX(0);
-    }
+    background-color: var(--fondo-color);
+  }
 }
 
 .header__mobile__link {
-    @include fliud-text (32, 16);
-    margin-bottom: 25px;
+  @include fliud-text(32, 16);
+  margin-bottom: 25px;
 }
