@@ -1,4 +1,4 @@
 
 [Ссылка на GitPages](https://dorkads.github.io/Miguel-UI/)
 
-![MiguelIU](images/Cover.jpeg)
+![https://dorkads.github.io/Miguel-UI/](images/Cover.jpeg)
