@@ -246,7 +246,7 @@ p {
 
 .header__menu {
   width: 42px;
-  aspect-ratio: 1;
+  height: 42px;
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -257,7 +257,7 @@ p {
   background-color: transparent;
   border: none;
   width: 42px;
-  aspect-ratio: 1;
+  height: 42px;
   position: relative;
   width: 16px;
   height: 2px;
