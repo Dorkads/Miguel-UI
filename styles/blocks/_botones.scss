@@ -3,6 +3,11 @@
     &__inner {
 
         padding-bottom: 128px;
+
+        @include mobile {
+
+            padding-bottom: 64px;
+        }
     }
 
     &__title {
@@ -26,5 +31,10 @@
         max-width: 1156px;
         height: auto;
         border-radius: var(--border-radius);
+
+        @include desktop {
+
+            max-width: 100%;
+        }
     }
 }

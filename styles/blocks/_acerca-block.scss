@@ -4,6 +4,16 @@
 
         margin-bottom: 64px;
         width: 1156px;
+
+        @include desktop {
+
+            max-width: 100%;
+        }
+
+        @include mobile {
+
+            margin-bottom: 32px;
+        }
     }
 
     &-title {

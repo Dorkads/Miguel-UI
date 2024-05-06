@@ -3,6 +3,11 @@
     &__inner {
 
         margin: 64px 0 128px 0;
+
+        @include mobile {
+
+            margin: 32px 0 64px 0;
+        }
     }
 
     &__text-gray {
@@ -15,12 +20,22 @@
 
         letter-spacing: -0.5px;
         margin: 24px 0 64px 0;
+
+        @include tablet {
+
+            margin: 0px 0 32px 0;
+        }
     }
 
     &__item {
 
-        width: 1154px;
+        max-width: 1154px;
         height: auto;
         border-radius: var(--border-radius);
+
+        @include desktop {
+
+            max-width: 100%;
+        }
     }
 }
