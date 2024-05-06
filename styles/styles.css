@@ -729,4 +729,21 @@ p {
   width: 1154px;
   height: auto;
   border-radius: var(--border-radius);
+}
+
+.acerca__block__inner {
+  margin-bottom: 64px;
+  width: 1156px;
+}
+.acerca__block-title {
+  margin-bottom: 16px;
+}
+.acerca__block__text {
+  letter-spacing: 0.44px;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: clamp(16px, 1.1111111111vw, 16px);
+}
+.acerca__block .text-margin {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

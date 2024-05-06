@@ -1,0 +1,26 @@
+.acerca__block {
+
+    &__inner {
+
+        margin-bottom: 64px;
+        width: 1156px;
+    }
+
+    &-title {
+
+        margin-bottom: 16px;
+    }
+
+    &__text {
+
+        letter-spacing: 0.44px;
+        line-height: 28px;
+        font-weight: 400;
+        @include fliud-text (16, 16);
+    }
+
+    .text-margin {
+
+        margin-bottom: 10px;
+    }
+}
