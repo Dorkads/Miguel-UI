@@ -1,0 +1,42 @@
+.paleta {
+
+    &__inner {
+
+        padding-bottom: 128px;
+    }
+
+    &__title {
+
+        margin-bottom: 18px;
+        letter-spacing: 0.25px;
+        line-height: 34px;
+    }
+
+    &__text {
+
+        margin-bottom: 24px;
+        letter-spacing: 0.44px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    &__items {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item{
+
+        &-img{
+
+            border-radius: var(--border-radius);
+            width: 1156px;
+            height: auto;
+        }
+    }
+
+
+}

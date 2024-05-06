@@ -748,11 +748,8 @@ p {
   margin-bottom: 10px;
 }
 
-.tipografia {
-  /*     &__inner {
-
-
-      } */
+.tipografia__inner {
+  padding: 64px 0 128px 0;
 }
 .tipografia__title {
   margin-bottom: 18px;
@@ -769,4 +766,30 @@ p {
 
 .text-margin {
   margin-bottom: 10px;
+}
+
+.paleta__inner {
+  padding-bottom: 128px;
+}
+.paleta__title {
+  margin-bottom: 18px;
+  letter-spacing: 0.25px;
+  line-height: 34px;
+}
+.paleta__text {
+  margin-bottom: 24px;
+  letter-spacing: 0.44px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.paleta__items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.paleta__item-img {
+  border-radius: var(--border-radius);
+  width: 1156px;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
