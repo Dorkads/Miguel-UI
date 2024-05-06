@@ -1,0 +1,29 @@
+.tipografia {
+
+/*     &__inner {
+
+        
+    } */
+
+    &__title {
+
+        margin-bottom: 18px;
+    }
+
+    &__item {
+
+        border-radius: var(--border-radius);
+        margin-top: 24px;
+    }
+}
+
+.google-link {
+
+    color: var(--gris-color);
+    border-bottom: 1px solid var(--gris-color);
+}
+
+.text-margin {
+
+    margin-bottom: 10px;
+}

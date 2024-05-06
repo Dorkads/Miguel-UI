@@ -191,7 +191,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(10px, 1.1111111111vw, 16px);
+  font-size: clamp(14px, 1.1111111111vw, 16px);
   font-weight: 500;
 }
 
@@ -745,5 +745,28 @@ p {
   font-size: clamp(16px, 1.1111111111vw, 16px);
 }
 .acerca__block .text-margin {
+  margin-bottom: 10px;
+}
+
+.tipografia {
+  /*     &__inner {
+
+
+      } */
+}
+.tipografia__title {
+  margin-bottom: 18px;
+}
+.tipografia__item {
+  border-radius: var(--border-radius);
+  margin-top: 24px;
+}
+
+.google-link {
+  color: var(--gris-color);
+  border-bottom: 1px solid var(--gris-color);
+}
+
+.text-margin {
   margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
