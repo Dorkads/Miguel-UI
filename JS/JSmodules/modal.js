@@ -3,13 +3,8 @@ function modal() {
   const mobileNav = document.querySelector("#mobileNav");
 
   modalBtn.addEventListener("click", () => {
-    if (!mobileNav.classList.contains("modal-open")) {
-      mobileNav.classList.add("modal-open");
-      mobileNav.style.display = "block";
-    } else {
-      mobileNav.classList.remove("modal-open");
-      mobileNav.style.display = "none";
-    }
+    mobileNav.style.display =
+      mobileNav.style.display === "none" ? "block" : "none";
   });
 }
 

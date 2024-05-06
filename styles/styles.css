@@ -712,4 +712,21 @@ p {
   font-size: clamp(14px, 1.1111111111vw, 16px);
   line-height: 28px;
   letter-spacing: 0.44px;
+}
+
+.proj__inner {
+  margin: 64px 0 128px 0;
+}
+.proj__text-gray {
+  color: var(--gris-color);
+  letter-spacing: 0.15px;
+}
+.proj__title {
+  letter-spacing: -0.5px;
+  margin: 24px 0 64px 0;
+}
+.proj__item {
+  width: 1154px;
+  height: auto;
+  border-radius: var(--border-radius);
 }/*# sourceMappingURL=styles.css.map */
