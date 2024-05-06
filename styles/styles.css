@@ -792,4 +792,25 @@ p {
   border-radius: var(--border-radius);
   width: 1156px;
   height: auto;
+}
+
+.botones__inner {
+  padding-bottom: 128px;
+}
+.botones__title {
+  margin-bottom: 18px;
+  letter-spacing: 0.25px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.botones__text {
+  margin-bottom: 24px;
+  letter-spacing: 0.44px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.botones__item {
+  max-width: 1156px;
+  height: auto;
+  border-radius: var(--border-radius);
 }/*# sourceMappingURL=styles.css.map */
