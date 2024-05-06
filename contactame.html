@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="index.html"> <img class="header__logo-icon"
+                            src="images/icons/Logo.svg" width="112" height="32" loading="lazy" alt="miguel ui"></a>
+                </div>
+
+                <nav class="header__nav hidden-mobile">
+                    <ul class="header__list">
+                        <li class="header__link"><a href="index.html">Inicio</a></li>
+                        <li class="header__link"><a href="acerca.html">Acerca de mi</a></li>
+                        <li class="header__link"><a href="projects.html">Proyectos</a></li>
+                        <li class="header__link"><a href="contactame.html">Contáctame</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav__mobile" id="mobileNav">
+                    <ul class="header__mobile__list">
+                        <li class="header__mobile__link"><a href="index.html">Inicio</a></li>
+                        <li class="header__mobile__link"><a href="acerca.html">Acerca de mi</a></li>
+                        <li class="header__mobile__link"><a href="projects.html">Proyectos</a></li>
+                        <li class="header__mobile__link"><a href="contactame.html">Contáctame</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__menu visible-mobile">
+                    <button class="header__nav__btn-menu" id="modalBtn"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__me">
+                        <h1 class="contact__title">¡Hablemos!</h1>
+                        <p class="contact__text">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
+                    </div>
+                    <form class="contact__form">
+                        <label for="tel">Tu nombre</label>
+                        <input type="tel" id="tel" placeholder="Nombre">
+
+                        <label for="email">Tu E-mail</label>
+                        <input type="email" name="" id="email" placeholder="Ejemplo@hotmail.com">
+
+                        <label for="massage">Tu mensaje</label>
+                        <textarea name="massage" id="massage" placeholder="Hey..."></textarea>
+
+                        <input type="submit" name="submit" id="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__first">
+                <div class="footer__firs-logo">
+                    <a href="index.html"><img class="footer__logo" src="images/icons/Logo.svg" width="111" height="32"
+                            alt="Miguel"></a>
+                </div>
+                <div class="footer__incio">
+                    <ul class="footer__list">
+                        <li class="footer__link footer__list-accent">Inicio</li>
+                        <li class="footer__link"><a href="acerca.html">Acerca de mi</a></li>
+                        <li class="footer__link"><a href="projects.html">Proyectos</a></li>
+                    </ul>
+                </div>
+                <div class="contactname">
+                    <ul class="footer__list">
+                        <li class="footer__link footer__list-accent">Contáctname</li>
+                        <li class="footer__link"><a href="#!">Correo</a></li>
+                        <li class="footer__link"><a href="#!">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul class="footer__list">
+                        <li class="footer__link footer__list-accent">Social</li>
+                    </ul>
+                    <div class="footer__link-socials">
+                        <a href="#!" class="footer__socials">
+                            <img class="footer__socials-item" src="images/icons/Logo_Behance.svg" alt="Behance"></a>
+                        <a href="#!" class="footer__socials">
+                            <img class="footer__socials-item" src="images/icons/Logo_Linkendl.svg" alt="Linkendl"></a>
+                        <a href="#!" class=" footer__socials">
+                            <img class="footer__socials-item" src="images/icons/Logo_Figma.svg" alt="Figma"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__two">
+                <p>&copy 2021 Miguel Ruz </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="JS/app.js"></script>
+</body>
+
+</html>

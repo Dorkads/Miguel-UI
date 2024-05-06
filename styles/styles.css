@@ -878,4 +878,89 @@ p {
   .botones__item {
     max-width: 100%;
   }
+}
+
+.contact__inner {
+  padding: 64px 0 128px 0;
+}
+@media (max-width: 767px) {
+  .contact__inner {
+    padding: 32px 0 64px 0;
+  }
+}
+.contact__me {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.contact__title {
+  margin-bottom: 16px;
+}
+.contact__form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 24px;
+  background-color: var(--bordes-color);
+  border-radius: var(--border-radius);
+  width: 447px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .contact__form {
+    width: 100%;
+    height: auto;
+  }
+}
+.contact__form input {
+  margin-bottom: 24px;
+  width: 100%;
+  height: 60px;
+  border-radius: var(--border-radius);
+  background-color: var(--rellenos-color);
+  color: var(--white-color);
+  padding: 16px 20px;
+  border: 1px solid var(--gris-color);
+}
+.contact__form input::-moz-placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
+}
+.contact__form input::placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
+}
+.contact__form label {
+  margin-bottom: 8px;
+}
+.contact__form textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 24px;
+  border-radius: var(--border-radius);
+  background-color: var(--rellenos-color);
+  border: 1px solid var(--gris-color);
+  padding: 16px 20px;
+  color: var(--white-color);
+  resize: none;
+}
+.contact__form textarea::-moz-placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
+}
+.contact__form textarea::placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
+}
+.contact__form input[type=submit] {
+  background-color: var(--primario-color);
+  border-color: var(--primario-color);
+  height: 45px;
+}
+.contact__form input[type=submit] ::-moz-placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
+}
+.contact__form input[type=submit] ::placeholder {
+  font-family: "DM Sans", "sans-serif";
+  color: var(--gris-color);
 }/*# sourceMappingURL=styles.css.map */
