@@ -290,6 +290,24 @@ p {
   border-radius: 5px;
 }
 
+.firstLine {
+  transform-origin: top left;
+  transform: rotate(43deg) translate(3px, -2px);
+  transition: ease-in 1s;
+}
+
+.secondLine {
+  transform: scale(0);
+  transition: ease-in 1s;
+}
+
+.threeLine {
+  width: 18px;
+  transform-origin: bottom right;
+  transform: rotate(-43deg) translate(7px, -10px);
+  transition: ease-in 1s;
+}
+
 .header__nav__mobile {
   transition: ease-in 0.2s;
   display: none;
